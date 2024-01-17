@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" >
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">KentJey</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <!-- <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li> -->
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header" >
+        <div class="overlay"></div>
+        <div class="head" style="width: 60%; margin: 0 auto;">
+              <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Kent Jey</span>
+            </h1>
+            <p class="header-subtitle">A Web Developer</p>            
+
+          <button  class="button learn-more">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Visit my work</span>
+            </button>
+        </div>  
+
+        <div class="other-header">
+            <div class="image-container">
+                <img src="assets/imgs/hi.gif" alt="image">
+                <!-- <img src="data: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" alt="image"> -->
+            </div>
+        </div>         
+        </div>
+         
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0 reveal animation-element" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/kenny.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                      As a passionate programmer, I thrive on the thrill of turning intricate lines of code into functional and innovative solutions. With a background in computer science, I bring a solid foundation in algorithms and problem-solving to every project. My love for learning constantly drives me to explore new technologies, languages, and frameworks, ensuring that I stay at the forefront of the ever-evolving tech landscape. I am dedicated to writing clean, efficient code and collaborating with diverse teams to bring ideas to life. Outside of coding,
+                        <br> you can find me immersed in tech blogs, enjoying a good cup of coffee, and occasionally indulging in a challenging coding puzzle.             
+                    </p>
+                    <!-- <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button> -->
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center reveal animation-element">
+            <p class="section-subtitle">Learnings ?</p>
+            <h6 class="section-title mb-6">Frameworks & Languages</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card1 ">
+    <div class="header1" style="background: rgb(240, 110, 62);">
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/lav.svg" alt="">
+        </div>
+        <span class="title1">Laravel
+    </span></div>
+
+    <div class="content1">
+        <p class="p1">
+            Wann learn more about laravel?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                                        <div class="card1 " >
+    <div class="header1" style="background: rgb(3, 158, 41); ">
+    
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/vue2.svg" alt="">
+        </div>
+        <span class="title1">Vue3.js
+    </span>
+    </div>
+
+     <div class="content1">
+        <p class="p1">
+            Wann learn more about Vue?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                                      <div class="card1 ">
+    <div class="header1" style="background: rgb(130, 62, 240);">
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/php.svg" alt="">
+        </div>
+        <span class="title1">PHP
+    </span></div>
+
+      <div class="content1">
+        <p class="p1">
+            Wann learn more about Php?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                                       <div class="card1 ">
+    <div class="header1" style="background: rgb(36, 128, 248);">
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/css.svg" alt="">
+        </div>
+        <span class="title1">Css
+    </span></div>
+
+     <div class="content1">
+        <p class="p1">
+            Wann learn more about Css?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-6 col-lg-3 mt-3">
+                                       <div class="card1 ">
+    <div class="header1" style="background: rgb(0, 7, 219);">
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/btrap.svg" alt="">
+        </div>
+        <span class="title1">Bootstrap5
+    </span></div>
+
+     <div class="content1">
+        <p class="p1">
+            Wann learn more about Bootstrap5?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-6 col-lg-3 mt-3">
+                                        <div class="card1 ">
+    <div class="header1" style="background: rgb(241, 135, 97);">
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/html.svg" alt="">
+        </div>
+        <span class="title1">Html
+    </span></div>
+
+      <div class="content1">
+        <p class="p1">
+            Wann learn more about Html?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-6 col-lg-3 mt-3">
+                                       <div class="card1 ">
+    <div class="header1" style="background: rgb(39, 239, 216);">
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/seman.svg" alt="">
+        </div>
+        <span class="title1">Semantic
+    </span></div>
+
+     <div class="content1">
+        <p class="p1">
+            Wann learn more about Semantic?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-6 col-lg-3 mt-3">
+                                        <div class="card1 ">
+    <div class="header1" style="background: rgb(62, 207, 240);">
+        <div class="img-box1">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z" fill="rgba(66,193,110,1)"></path>
+            </svg> -->
+            <img src="/assets/imgs/tail.svg" alt="">
+        </div>
+        <span class="title1">tailwind
+    </span></div>
+
+     <div class="content1">
+        <p class="p1">
+            Wann learn more about Tailwind?
+        </p>
+
+        <a class="btn-link">Documentation</a>
+    </div>
+</div>
+
+                    <!-- <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/tail.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Tailwind</h6>
+                            <p class="subtitle" style="padding-left: 10px; padding-right: 10px;">
+                                  If you want to learn about Tailwind  <a href="" style="text-decoration: underline;">Documentation</a>
+                                  <div class="progress-container">
+                                    <div class="progress-bar" style="width:60%; background: rgb(0, 204, 255);">60%</div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center reveal animation-element">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Developing</h5>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Projects</h5>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+    <section class="section" id="pricing">
+        <div class="container text-center reveal animation-element">
+            <p class="section-subtitle">How do i amuse myself ?</p>
+            <h6 class="section-title mb-6">My Hobbies</h6>
+            <!-- row -->
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Mobile Games</h6>
+                        <div class="pricing-card-list">
+                             <p style="font-weight: bold;">Favorite Games</p>
+                             <ol style="text-align: start; font-weight: 600; color: #656565; font-size: 14px;"  >
+                                <li>Mobile Legends</li>
+                                <li>Call of Duty</li>
+                                <li>Players Unknown Battle Ground</li>
+                                <li>Clash of Clans</li>
+                                <li>Genshin Impact</li>
+                             </ol>
+                        </div>
+                    </div>
+                    <!-- <div class="pricing-card-footer">
+                        <span>$</span>
+                        <span>0.00/Month</span>
+                    </div> -->
+                    <!-- <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a> -->
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Instruments</h6>
+                        <div class="pricing-card-list">
+                            <p style="font-weight: bold;">Intstruments played</p>
+                             <ol style="text-align: start; font-weight: 600; color: #656565; font-size: 14px;"  >
+                                <li>Drum</li>
+                                <li>Guitar</li>
+                                <li>Bass</li>
+                                
+                             </ol>
+                        </div>
+                    </div>
+ 
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/startup.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Watching animes</h6>
+                        <div class="pricing-card-list">
+                            <p style="font-weight: bold;">Favorite Animes</p>
+                                <ol style="text-align: start; font-weight: 600; color: #656565; font-size: 14px;"  >
+                                <li>Jujutsu Kaisen</li>
+                                <li>Demon Slayer</li>
+                                <li>One Punch Man</li>
+                                <li>Eminence of the Shadow</li>
+                                <li>Mashle</li>
+                                <li>Seven Deadly Sins</li>
+                                
+                             </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- end of pricing wrapper -->
+        </div> <!-- end of container -->
+    </section><!-- end of pricing section -->
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left reveal animation-element">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-black">Want to work with me?</h6>
+                    <p class="m-0 text-black">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">More?</p>
+            <h6 class="section-title mb-6">More About me</h6>
+
+         
+            <div class="row">
+                <ol style="font-weight: 600; color: rgb(104, 104, 104);">
+                    <li> &nbsp; Where do i live? : I live in Bohol</li> 
+                    <li>How old? : I'm 22 years of age</li> 
+                    <li>How old? : I'm 22 years of age</li> 
+                   
+                </ol>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- <section class="section" id="blog">
+ 
+        <div class="container text-center">
+            <p class="section-subtitle">Recent Posts?</p>
+            <h6 class="section-title mb-6">Blog</h6>
+            
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+
+                    <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                    <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+
+ 
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Explicabo illo</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                        <a href="#"><i class="ti-comment"></i> 264</a>
+                    </p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>< -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="on construct" disabled required>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="on process" disabled requried>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" disabled  class="form-control" placeholder="on progress"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" disabled value="on process" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <div class="text-right container"  style="padding-bottom: 10px; font-size: 12px; font-weight: 600;">
+        or just direct message me in this platforms
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#
+            
+            ">Webmaster</a></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://github.com/khentzy1321" class="link"><i class="ti-github"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+    <script>
+        var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_top_position <= window_bottom_position)) {
+      $element.addClass('active');
+    } else {
+      $element.removeClass('active');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+    </script>
+
+    <style>
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+        .button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+.button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+.button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #282936;
+ border-radius: 1.625rem;
+}
+
+.button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+.button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+.button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+.button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.button:hover .circle {
+ width: 100%;
+}
+
+.button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+.button:hover .button-text {
+ color: #fff;
+}
+
+    .progress-container {
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 0;
+      height: 10px;
+      /* background-color: #4CAF50; */
+      text-align: center;
+      line-height: 30px;
+      color: white;
+      border-radius: 5px;
+      transition: width 0.3s ease;
+    }
+
+    /* Add hover effect (optional) */
+    /* .progress-container:hover .progress-bar {
+      background-color: #45a049;
+    } */
+
+   .card1 {
+  width: 100%;
+  height: 130px;
+  transition: all .5s;
+
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card1:hover {
+  height: 220px;
+  background: linear-gradient(#edededc5 60%);
+  border-radius: 10px;
+}
+
+.card1 .header1 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(191, 52, 2); */
+  margin-bottom: 16px;
+  /* border-radius: 10px 10px 0 0px; */
+}
+
+.card1 .header1 .img-box1 img{
+  width: 50px;
+}
+
+.card1 .header1 .title1 {
+  font-size: 1em;
+  letter-spacing: .1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.card1:hover .header1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card1:hover .card1 .header1 .title1 {
+  padding: 0;
+}
+
+.card1 .content1 {
+  display: block;
+  text-align: left;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.card1 .content1 .p1 {
+  transition: all .5s;
+  font-size: .8em;
+  margin-bottom: 8px;
+}
+
+.card1 .content1 a {
+  color: #1d8122;
+  cursor: pointer;
+  transition: all .5s;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card1 .content1 .btn-link:hover {
+  border-bottom: 1px solid #1d8122;
+}
+    </style>
+
+</body>
+</html>
